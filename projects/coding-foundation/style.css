@@ -10,3 +10,10 @@ body {
   margin-top: 50px;
   width:100%;
 }
+
+#canvas {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}

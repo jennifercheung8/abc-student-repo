@@ -14,11 +14,13 @@ function draw() {
   var canvas = document.getElementById('canvas');
   var x = document.getElementById("myNumber").value;
   document.getElementById('canvas').innerHTML = x;
+  document.body.appendChild(x);
+
 console.log(x);
   if (canvas.getContext) {
     var context = canvas.getContext('2d');
     context.fillStyle = "white";
-    //context.style.flexWrap = "wrap";
+    document.getElementById('canvas').style.flexWrap = "wrap";
     for(i=0;i<x;i++){
     context.fillRect(50*i,0,30,30);
 
