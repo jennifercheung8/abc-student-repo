@@ -6,7 +6,7 @@ body {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 42%;
+  margin-left: 42%;
   margin-top: 50px;
   width:100%;
 }
