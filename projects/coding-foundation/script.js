@@ -14,7 +14,6 @@ function draw() {
   var canvas = document.getElementById('canvas');
   var x = document.getElementById("myNumber").value;
   document.getElementById('canvas').innerHTML = x;
-  document.body.appendChild(x);
 
 console.log(x);
   if (canvas.getContext) {
@@ -22,8 +21,9 @@ console.log(x);
     context.fillStyle = "white";
     document.getElementById('canvas').style.flexWrap = "wrap";
     for(i=0;i<x;i++){
+      for(j=0;j<x;j++){
     context.fillRect(50*i,0,30,30);
-
+}
 }
 
     }
