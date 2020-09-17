@@ -21,8 +21,13 @@ console.log(x);
     context.fillStyle = "white";
     document.getElementById('canvas').style.flexWrap = "wrap";
     for(i=0;i<x;i++){
-    context.fillRect(50*i,0,30,30);
-  
+      for(j=0; j<x; j++) {
+    context.fillRect(100*i,50*j,30,30);
+    context.fillRect(50*j, 100*i, 30, 30);
+    context.fillRect(50*i, 100*j, 30, 30);
+    context.fillRect(100*j, 100*i, 30, 30);
+  }
+
 }
 
     }
