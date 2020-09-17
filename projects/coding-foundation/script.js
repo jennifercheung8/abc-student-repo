@@ -22,6 +22,7 @@ console.log(x);
     document.getElementById('canvas').style.flexWrap = "wrap";
     for(i=0;i<x;i++){
     context.fillRect(50*i,0,30,30);
+  
 }
 
     }
