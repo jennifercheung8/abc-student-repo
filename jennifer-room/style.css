@@ -122,14 +122,14 @@ a:hover{
   color: #5d6e62;
 }
 
-#preimg {
+/* #preimg {
 position: absolute;
 top: 350px;
 right: 150px;
 opacity: 0;
-}
+} */
 
-#miniimg {
+#mini1 {
 position: absolute;
 top: 1050px;
 left: 250px;
