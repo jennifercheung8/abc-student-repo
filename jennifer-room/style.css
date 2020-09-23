@@ -122,16 +122,16 @@ a:hover{
   color: #5d6e62;
 }
 
-/* #preimg {
-position: absolute;
-top: 350px;
-right: 150px;
-opacity: 0;
-} */
-
 #mini1 {
 position: absolute;
 top: 1050px;
 left: 250px;
 opacity: 0;
 }
+
+/* #preimg {
+position: absolute;
+top: 350px;
+right: 150px;
+opacity: 0;
+} */
