@@ -137,6 +137,13 @@ left: 250px;
 opacity: 0;
 }
 
+#mini2 {
+position: absolute;
+top: 1050px;
+left: 250px;
+opacity: 0;
+}
+
 /* #preimg {
 position: absolute;
 top: 350px;
