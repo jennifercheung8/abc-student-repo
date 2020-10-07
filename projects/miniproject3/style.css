@@ -1,0 +1,368 @@
+body{
+  /* background-color: black; */
+}
+
+.backDoor{
+  background-color: #06132e;
+  position:relative;
+  width:150px;
+  height:250px;
+
+  margin: 0 auto;
+  margin-top:250px;
+
+  cursor:pointer;
+}
+
+.door{
+  background-color: #6b240b;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:150px;
+  height:250px;
+
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+.doorZoom{
+animation-name: zoom;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+z-index: 0;
+}
+
+@keyframes zoom{
+  0%{
+    transform-origin: center;
+    transform: scale(1);
+  }
+  100%{
+    transform-origin: center;
+    transform: scale(10);
+  }
+}
+
+.star1{
+  position: absolute;
+  width: 50px;
+  left: 48%;
+  top: 350px;
+  z-index: 5;
+  cursor:pointer;
+}
+
+.move1{
+animation-name: moveStar1;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes moveStar1{
+  0%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  10%{
+    transform: translate3D(0px, -200px, 0);
+  }
+  20%{
+    transform: translate3D(-400px, 0px, 0);
+  }
+  30%{
+    transform: translate3D(400px, 0px, 0);
+  }
+  40%{
+    transform: translate3D(0px, 200px, 0);
+  }
+  50%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  60%{
+    transform: translate3D(0px, -100px, 0);
+  }
+  70%{
+    transform: translate3D(400px, -100px, 0);
+  }
+  80%{
+    transform: translate3D(400px, -100px, 0) scale(3) rotate(360deg);
+  }
+  90%{
+    transform: translate3D(0px, -100px, 0);
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0);
+  }
+}
+
+.bigStar{
+  animation-name: zoomStar1;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes zoomStar1 {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(12) rotate(1080deg);
+  }
+  100%{
+    transform: scale(0) rotate(2040deg);
+  }
+
+}
+
+.star2{
+  position: absolute;
+  width: 50px;
+  left: 48%;
+  top: 350px;
+  z-index: 4;
+}
+
+.move2{
+animation-name: moveStar2;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes moveStar2{
+  0%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  10%{
+    transform: translate3D(400px, -200px, 0);
+  }
+  20%{
+    transform: translate3D(400px, 200px, 0);
+  }
+  30%{
+    transform: translate3D(-400px, -200px, 0);
+  }
+  40%{
+    transform: translate3D(-400px, 200px, 0);
+  }
+  50%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  60%{
+    transform: translate3D(0px, -200px, 0);
+  }
+  70%{
+    transform: translate3D(-400px, -200px, 0);
+  }
+  80%{
+    transform: translate3D(-400px, -200px, 0) scale(3) rotate(360deg);
+  }
+  90%{
+    transform: translate3D(0px, -200px, 0);
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0);
+  }
+}
+
+.star3{
+  position: absolute;
+  width: 50px;
+  left: 48%;
+  top: 350px;
+  z-index: 3;
+}
+
+.move3{
+animation-name: moveStar3;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes moveStar3{
+  0%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  10%{
+    transform: translate3D(-400px, -200px, 0);
+  }
+  20%{
+    transform: translate3D(-400px, 200px, 0);
+  }
+  30%{
+    transform: translate3D(400px, -200px, 0);
+  }
+  40%{
+    transform: translate3D(400px, 200px, 0);
+  }
+  50%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  60%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  70%{
+    transform: translate3D(-400px, 0px, 0);
+  }
+  80%{
+    transform: translate3D(-400px, 0px, 0) scale(3) rotate(360deg);
+  }
+  90%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0);
+  }
+}
+
+.star4{
+  position: absolute;
+  width: 50px;
+  left: 48%;
+  top: 350px;
+  z-index: 2;
+}
+
+.move4{
+animation-name: moveStar4;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes moveStar4{
+  0%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  10%{
+    transform: translate3D(-400px, 200px, 0);
+  }
+  20%{
+    transform: translate3D(-400px, -200px, 0);
+  }
+  30%{
+    transform: translate3D(400px, 200px, 0);
+  }
+  40%{
+    transform: translate3D(400px, -200px, 0);
+  }
+  50%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  60%{
+    transform: translate3D(0px, 100px, 0);
+  }
+  70%{
+    transform: translate3D(400px, 100px, 0);
+  }
+  80%{
+    transform: translate3D(400px, 100px, 0) scale(3) rotate(360deg);
+  }
+  90%{
+    transform: translate3D(0px, 100px, 0);
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0);
+  }
+}
+
+.star5{
+  position: absolute;
+  width: 50px;
+  left: 48%;
+  top: 350px;
+  z-index: 1;
+}
+
+.move5{
+animation-name: moveStar5;
+animation-duration: 10s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes moveStar5{
+  0%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  10%{
+    transform: translate3D(400px, 200px, 0);
+  }
+  20%{
+    transform: translate3D(400px, -200px, 0);
+  }
+  30%{
+    transform: translate3D(-400px, 200px, 0);
+  }
+  40%{
+    transform: translate3D(-400px, -200px, 0);
+  }
+  50%{
+    transform: translate3D(0px, 0px, 0);
+  }
+  60%{
+    transform: translate3D(0px, 200px, 0);
+  }
+  70%{
+    transform: translate3D(-400px, 200px, 0);
+  }
+  80%{
+    transform: translate3D(-400px, 200px, 0) scale(3) rotate(360deg);
+  }
+  90%{
+    transform: translate3D(0px, 200px, 0);
+  }
+  100%{
+    transform: translate3D(0px, 0px, 0);
+  }
+}
+
+.backDoor2{
+  background-color: white;
+  position:relative;
+  width:150px;
+  height:250px;
+
+  margin: 0 auto;
+  margin-top:250px;
+
+  cursor:pointer;
+}
+
+.door2{
+  background-color: #6b240b;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:150px;
+  height:250px;
+
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen2{
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+.doorZoom2{
+animation-name: zoom;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+z-index: 0;
+}
