@@ -1,0 +1,85 @@
+.email{
+  font-family: "Helvetica";
+  font-size: 18px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#ps{
+  font-size: 30px;
+  background-color: #a7b8df;
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 70px;
+  height: 50px;
+  border-radius: 20px;
+  position: relative;
+  left: 28%;
+  top: 30px;
+}
+
+#home{
+  font-size: 14px;
+  background-color: #a7b8df;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  left: 66%;
+  top: 30px;
+  display: none;
+}
+a{
+  text-decoration: none;
+}
+
+.text{
+  font-family: "Helvetica";
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
+  left: 10%;
+  margin:0;
+}
+
+.callme{
+  display: none;
+  height: 300px;
+}
+
+#give{
+  position:relative;
+  width: 200px;
+  left: 0%;
+  top: 0px;
+}
+
+#me{
+  position:relative;
+  width: 200px;
+  left: 20%;
+  top:-100px;
+}
+
+#a{
+  position:relative;
+  width: 200px;
+  left: 35%;
+  top: -500px;
+}
+#call1{
+  position:relative;
+  width: 200px;
+  left: 45%;
+  top:-500px;
+}
+#soon{
+  position:relative;
+  width: 200px;
+  left: 60%;
+  top:-850px;
+}

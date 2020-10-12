@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inbox</title>
+    <link rel="stylesheet" href="inbox.css">
+  </head>
+  <body>
+
+  <div id="background"></div>
+
+  <table>
+  <tr>
+    <th></th>
+    <th>Unread</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td id="t1" width="100px"><input type="range" id="one" class="range" name="one" min="0" max="1" step="0.01" value="1"></td>
+    <td width="200px"><p id="sender1">Professor H: <br>Work Promptly Due</p></td>
+    <td width="200px"><p id="oneText">In these unprecedented times, I understand your struggles. I still expect work submitted by 5pm...</p></td>
+  </tr>
+  <tr>
+    <td id="t2"><input type="range" id="two" class="range" name="two" min="0" max="1" step="0.01" value="1"></td>
+    <td><p id="sender2">Jane: <br>Virtual brunch invite</p></td>
+    <td><p id="twoText">Join us this Saturday on Zoom to eat brunch together separately!! Our theme for this week is...</p></td>
+  </tr>
+  <tr>
+    <td id="t3"><input type="range" id="three" class="range" name="three" min="0" max="1" step="0.01" value="1"></td>
+    <td><p id="sender3">Zara: <br>Fall Clearance</p></td>
+    <td><p id="threeText">Hundreds of items up to 70% off! Use promo code FALLNOW at checkout. Free shipping over $50...</p></td>
+  </tr>
+  <tr>
+    <td id="t4"><input type="range" id="four" class="range" name="four" min="0" max="1" step="0.01" value="1"></td>
+    <td><p id="sender4">Facebook: <br>Sarah mentioned you in a comment</p></td>
+    <td><p id="fourText">Sarah mentioned you in a comment in Watch Party. Sarah: when are we gonna watch this show...</p></td>
+  </tr>
+</table>
+
+<div class="mailNotif">
+<p id="question">Clear inbox?</p>
+<img src="images/mail.png" class="mail" alt="mail" style="width:150px">
+<div id="notif">
+  <img src="images/notif.png" alt="notif" style="width:40px">
+  <p><span id="notifNum">1873</span></p>
+  <input type="range" id="clear" name="clear" min="0" max="1873" value="1873">
+</div>
+</div>
+
+<audio id="trash">
+  <source src="audio/trash.mp3" type="audio/mpeg">
+</audio>
+
+<a href="home.html"><button type="button" id="btn" name="button">Home</button></a>
+
+  <script src="inbox.js" charset="utf-8"></script>
+  </body>
+</html>

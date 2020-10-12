@@ -1,0 +1,71 @@
+body{
+  font-family: "Helvetica";
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  /* background-image: url(images/grid.png); */
+}
+
+#head {
+  position: relative;
+  margin-top: 250px;
+
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.mailNotif{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce {
+  0%{
+    top:10px;
+  }
+  30%{
+    top: -30px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+
+#notif {
+  position: relative;
+  left: 80px;
+  top: -190px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  top:-250px;
+  text-decoration: none;
+  left: 200px;
+  font-size: 20px;
+  width: 100px;
+}
+
+#inbox, #sent, #drafts, #spam{
+  text-decoration: none;
+  margin: 10px;
+  width: 60px;
+}
+a:link, a:visited{
+  color: black;
+}
+
+a:hover{
+  color: red;
+}

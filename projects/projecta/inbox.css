@@ -1,0 +1,90 @@
+body{
+  font-family: "Helvetica";
+}
+
+table{
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+}
+
+th{
+  text-align: left;
+  padding-right: 50px;
+  font-size: 18px;
+}
+
+td{
+  margin-right: 50px;
+  width: 260px;
+}
+
+input {
+  width: 100px;
+  transform: rotate(180deg);
+}
+
+span{
+  position: relative;
+}
+
+#sender1, #sender2, #sender3, #sender4{
+  font-weight:bold;
+}
+
+#t1, #t2, #t3, #t4 {
+  width: 150px;
+}
+
+.mailNotif{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  top: 80px;
+  text-align: center;
+  cursor:pointer;
+  height: 100px;
+}
+
+#question{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#notif{
+  position: relative;
+  top: -145px;
+  left: 60px;
+}
+
+#notifNum{
+  position: relative;
+  top:-48px;
+  color: white;
+}
+
+#clear{
+  position: relative;
+  margin-left:-125px;
+  top: 50px;
+  width:150px;
+}
+
+button{
+  position: relative;
+  top: 130px;
+  left: 80%;
+  background-color: #a7b8df;
+  width: 60px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+}
