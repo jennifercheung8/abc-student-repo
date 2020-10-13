@@ -34,13 +34,13 @@ function mouseOutMini3() {
 document.getElementById("mini3").style.opacity = "0"
 }
 
-// document.getElementById("project").addEventListener("mouseover", mouseOverProject);
-// document.getElementById("project").addEventListener("mouseout", mouseOutProject);
+document.getElementById("A").addEventListener("mouseover", mouseOverProjectA);
+document.getElementById("A").addEventListener("mouseout", mouseOutProjectA);
 
-// function mouseOverProject() {
-// document.getElementById("preimg").style.opacity = "1"
-// }
-//
-// function mouseOutProject() {
-// document.getElementById("preimg").style.opacity = "0"
-// }
+function mouseOverProjectA() {
+document.getElementById("imga").style.opacity = "1"
+}
+
+function mouseOutProjectA() {
+document.getElementById("imga").style.opacity = "0"
+}
