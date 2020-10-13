@@ -18,6 +18,7 @@
   position: relative;
   left: 28%;
   top: 30px;
+  cursor: pointer;
 }
 
 #home{
