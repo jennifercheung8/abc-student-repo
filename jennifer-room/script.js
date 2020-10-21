@@ -46,6 +46,8 @@ function mouseOutMini4() {
 document.getElementById("mini4").style.opacity = "0"
 }
 
+
+
 document.getElementById("A").addEventListener("mouseover", mouseOverProjectA);
 document.getElementById("A").addEventListener("mouseout", mouseOutProjectA);
 
