@@ -1,0 +1,15 @@
+{
+  "name": "Claustrophobic",
+  "version": "1.0",
+  "description": "Tabs change window size and display zoom",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }]
+}
