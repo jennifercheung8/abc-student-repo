@@ -70,3 +70,14 @@ document.getElementById("imga").style.opacity = "1"
 function mouseOutProjectA() {
 document.getElementById("imga").style.opacity = "0"
 }
+
+document.getElementById("B").addEventListener("mouseover", mouseOverProjectB);
+document.getElementById("B").addEventListener("mouseout", mouseOutProjectB);
+
+function mouseOverProjectB() {
+document.getElementById("imgb").style.opacity = "1"
+}
+
+function mouseOutProjectB() {
+document.getElementById("imgb").style.opacity = "0"
+}
