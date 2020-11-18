@@ -1,0 +1,26 @@
+body{
+  font-family: "helvetica";
+  text-align: center;
+  padding-top: 100px;
+}
+
+p{
+  font-size: 18px;
+}
+
+input[type=text] {
+  background-color: #a1bee3;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+}
+
+button{
+  height: 30px;
+  background-color: #a1bee3;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
