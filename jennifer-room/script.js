@@ -58,6 +58,18 @@ function mouseOutMini5() {
 document.getElementById("mini5").style.opacity = "0"
 }
 
+document.getElementById("six").addEventListener("mouseover", mouseOverMini6);
+document.getElementById("six").addEventListener("mouseout", mouseOutMini6);
+
+function mouseOverMini6() {
+document.getElementById("mini6").style.opacity = "1"
+console.log("hello");
+}
+
+function mouseOutMini6() {
+document.getElementById("mini6").style.opacity = "0"
+}
+
 
 
 document.getElementById("A").addEventListener("mouseover", mouseOverProjectA);
