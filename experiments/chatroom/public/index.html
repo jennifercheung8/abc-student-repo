@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class = "chatwrapper">
+        <div class="namebox">
+          <p>I am <input type="text" id="name" placeholder="...?" autocomplete="off">
+        </div>
+        <div class="chatbox">
+          <ul id="chat">
+            <!-- <p><li><span class="sender">Jennifer:</span> Hi</li></p> -->
+
+          </ul>
+        </div>
+        <div class="messagebox">
+          <input type="text" id="message" placeholder="say something"> <button type="button" id="send" autocomplete="off">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
