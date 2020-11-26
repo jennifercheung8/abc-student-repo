@@ -130,56 +130,14 @@ a:hover{
   color: #5d6e62;
 }
 
-#mini1 {
+#mini1, #mini2, #mini3, #mini4, #mini5, #mini6, #mini7 {
 position: absolute;
 top: 1050px;
 left: 250px;
 opacity: 0;
 }
 
-#mini2 {
-position: absolute;
-top: 1050px;
-left: 250px;
-opacity: 0;
-}
-
-#mini3 {
-position: absolute;
-top: 1050px;
-left: 250px;
-opacity: 0;
-}
-
-#mini4 {
-position: absolute;
-top: 1050px;
-left: 250px;
-opacity: 0;
-}
-
-#mini5 {
-position: absolute;
-top: 1050px;
-left: 250px;
-opacity: 0;
-}
-
-#mini6 {
-position: absolute;
-top: 1050px;
-left: 250px;
-opacity: 0;
-}
-
-#imga {
-position: absolute;
-top: 450px;
-right: 150px;
-opacity: 0;
-}
-
-#imgb {
+#imga, #imgb {
 position: absolute;
 top: 450px;
 right: 150px;
