@@ -1,12 +1,18 @@
 body {
-    background: linear-gradient(132deg, #bfe5ee, #82cbe6);
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(132deg, #9ecce6, #82bee6);
     background-size: 400% 400%;
 
-    animation: backgroundColor 50s ease infinite;
+    animation: backgroundColor 20s ease infinite;
+}
+
+.backgroundAnimation {
+  animation: backgroundColor 20s ease infinite;
 }
 
 @keyframes backgroundColor {
-    0%{background-position:49% 0%}
-    50%{background-position:52% 100%}
-    100%{background-position:49% 0%}
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
 }
