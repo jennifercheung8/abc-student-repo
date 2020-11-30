@@ -17,7 +17,11 @@ io.on('connection', (socket) => {
   let time = new Date();
   let hour = time.getHours();
   console.log(hour);
-  socket.emit('allTimes', hour);
+
+  socket.on("clientHour", (clientHour)=>{
+    console.log(clientHour);
+    io.emit('allTimes', clientHour);
+  })
 
   socket.on('disconnect', () => {
     console.log('user disconnected, ' + userCount + " users connected");
