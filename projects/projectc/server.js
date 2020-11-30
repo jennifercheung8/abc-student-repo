@@ -14,12 +14,12 @@ io.on('connection', (socket) => {
   let userCount = socket.client.conn.server.clientsCount;
   console.log( "user connected, " + userCount + " users connected" );
   io.emit("userNum", userCount);
-  let time = new Date();
-  let hour = time.getHours();
-  console.log(hour);
+  // let time = new Date();
+  // let hour = time.getHours();
+  // console.log(hour);
 
   socket.on("clientHour", (clientHour)=>{
-    console.log(clientHour);
+    console.log("client hour: " + clientHour);
     io.emit('allTimes', clientHour);
   })
 

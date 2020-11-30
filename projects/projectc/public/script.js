@@ -9,6 +9,7 @@ socket.emit('clientHour', clientHour);
 socket.on("userNum", (userCount)=>{
   console.log(userCount + " users");
   window.users=userCount;
+  console.log(allTimes);
 })
 
 
@@ -16,5 +17,3 @@ socket.on("allTimes", (clientHour)=>{
   console.log("incoming times: " + clientHour);
   allTimes.push(clientHour);
 })
-
-console.log(allTimes);
