@@ -16,13 +16,13 @@ if (clientHour > 22 || clientHour < 5){
 } else if (clientHour == 6){
   document.body.style.background="linear-gradient(132deg, #d96f4c, #5f7bb3)";
   console.log("it's sunrise");
-} else if (clientHour > 6 || clientHour < 9){
+} else if (clientHour > 6 && clientHour < 9){
   document.body.style.background="linear-gradient(132deg, #9ecce6, #82bee6)";
   console.log("it's early morning");
-} else if (clientHour > 8 || clientHour < 12){
+} else if (clientHour > 8 && clientHour < 12){
   document.body.style.background="linear-gradient(132deg, #68bae8, #62ade1)";
   console.log("it's mid morning");
-} else if (clientHour > 11 || clientHour < 16){
+} else if (clientHour > 11 && clientHour < 16){
   document.body.style.background="linear-gradient(132deg, #289ddf, #2b8fe1)";
   console.log("it's mid day");
 } else if (clientHour == 16){
@@ -31,10 +31,10 @@ if (clientHour > 22 || clientHour < 5){
 } else if (clientHour == 17){
   document.body.style.background="linear-gradient(132deg, #f08b39, #6281e3)";
   console.log("it's sunset");
-} else if (clientHour > 17 || clientHour < 20){
+} else if (clientHour > 17 && clientHour < 20){
   document.body.style.background="linear-gradient(132deg, #2e5d9d, #133f72)";
   console.log("it's evening");
-} else if (clientHour > 19 || clientHour < 23){
+} else if (clientHour > 19 && clientHour < 23){
   document.body.style.background="linear-gradient(132deg, #223667, #111e50)";
   console.log("it's night");
 }
