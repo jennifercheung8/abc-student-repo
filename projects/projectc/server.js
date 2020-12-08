@@ -21,7 +21,7 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => {
     console.log('user disconnected, ' + userCount + " users connected");
-    io.emit("userNum", userCount);
+    io.emit("newConnect", userCount);
   });
 });
 

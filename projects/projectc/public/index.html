@@ -5,9 +5,40 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="p5.js"></script>
   </head>
   <body>
-    
+    <p id="localTime">Local Time: <span id = "localHourSpan"></span>:<span id = "localMinuteSpan"></span><p>
+    <div class="container">
+    <div id="canvas">
+      <p id="avgTime">Average Time of Global Users: <span id = "avgHourSpan"></span>:<span id = "avgMinuteSpan"></span><p>
+    </div>
+    </div>
+    <div class="drawspace">
+      <div id="draw"></div>
+      <div class="options">
+        <div class="colors">
+          <div class="brush">
+            <p>Brush Color</p>
+            <input type="color" id="colorPicker" value="#bae26e">
+          </div>
+          <div class="back">
+            <p>Background Color</p>
+            <input type="color" id="backcolor" value="#ffffff">
+          </div>
+        </div>
+        <div class="bottomrow">
+          <div class="brushsize">
+            <p>Brush Size</p>
+            <input type="range" min="5" max="50" value="10" id="slider">
+          </div>
+          <div id="buttons">
+          <div id="clear"></div>
+          <button id="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
